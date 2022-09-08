@@ -532,6 +532,9 @@ cfg_time! {
 
 mod util;
 
+#[cfg(feature = "test-util")]
+compile_error!("oops!");
+
 /// Due to the `Stream` trait's inclusion in `std` landing later than Tokio's 1.0
 /// release, most of the Tokio stream utilities have been moved into the [`tokio-stream`]
 /// crate.
