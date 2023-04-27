@@ -98,7 +98,7 @@ autocfg = "1.1"
 
 [dependencies]
 tokio-macros = { version = "~2.1.0", path = "../tokio-macros", optional = true }
-
+tracing = { version = "0.1.25", default-features = false, features = ["std"] } # Not in full
 pin-project-lite = "0.2.0"
 
 # Everything else is optional...
@@ -112,7 +112,7 @@ socket2 = { version = "0.4.9", optional = true, features = [ "all" ] }
 
 # Currently unstable. The API exposed by these features may be broken at any time.
 # Requires `--cfg tokio_unstable` to enable.
-tracing = { version = "0.1.25", default-features = false, features = ["std"], optional = true } # Not in full
+
 
 # Currently unstable. The API exposed by these features may be broken at any time.
 # Requires `--cfg tokio_unstable` to enable.
