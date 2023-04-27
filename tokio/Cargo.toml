@@ -112,7 +112,6 @@ socket2 = { version = "0.4.9", optional = true, features = [ "all" ] }
 
 # Currently unstable. The API exposed by these features may be broken at any time.
 # Requires `--cfg tokio_unstable` to enable.
-[target.'cfg(tokio_unstable)'.dependencies]
 tracing = { version = "0.1.25", default-features = false, features = ["std"], optional = true } # Not in full
 
 # Currently unstable. The API exposed by these features may be broken at any time.
